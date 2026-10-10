@@ -20,7 +20,7 @@
 		"db:migrate:prod": "wrangler d1 migrations apply DB --remote"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "5.20261002.1",
+		"@cloudflare/workers-types": "5.20261003.1",
 		"vitest": "5.0.3",
 		"typescript": "7.0.2",
 		"wrangler": "4.147.0"
