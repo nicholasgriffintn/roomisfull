@@ -24,7 +24,7 @@
 		"wrangler": "4.147.0"
 	},
 	"dependencies": {
-		"@sentry/cloudflare": "11.1.0",
+		"@sentry/cloudflare": "11.4.0",
 		"xml-js": "1.6.11",
 		"@roomisfull/conference": "workspace:*"
 	}
