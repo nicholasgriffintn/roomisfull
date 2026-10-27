@@ -11,9 +11,9 @@ export function initSentry(router: AnyRouter) {
 
 	Sentry.init({
 		dsn: conferenceConfig.integrations.sentryWebDsn,
+		environment: import.meta.env.MODE,
 		integrations: [Sentry.tanstackRouterBrowserTracingIntegration(router)],
 		sampleRate: 1,
-		enableLogs: false,
 		tracesSampleRate: 0,
 		beforeSend(event) {
 			return event.exception?.values?.length ? event : null;

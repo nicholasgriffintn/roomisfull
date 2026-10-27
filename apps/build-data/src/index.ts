@@ -48,6 +48,8 @@ const run = async (env: Env) => {
 export default Sentry.withSentry<Env, unknown>(
 	(env) => ({
 		dsn: conferenceConfig.integrations.sentryBuildDsn,
+		environment: env.ENVIRONMENT,
+		enabled: env.ENVIRONMENT !== "development",
 		sampleRate: 1,
 		enableLogs: false,
 		tracesSampleRate: 0,

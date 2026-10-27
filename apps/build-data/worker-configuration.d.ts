@@ -2,6 +2,7 @@
 // After adding bindings to `wrangler.toml`, regenerate this interface via `npm run cf-typegen`
 interface Env {
 	R2: R2Bucket;
+	ENVIRONMENT?: string;
 	YEAR?: string;
 	DEFAULT_YEAR?: string;
 	BUILD_YEAR?: string;

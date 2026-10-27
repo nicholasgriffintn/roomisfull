@@ -26,6 +26,9 @@
 	"env": {
 		"fosdem": {
 			"name": "fosdem-pwa-build-data",
+			"vars": {
+				"ENVIRONMENT": "production"
+			},
 			"define": {
 				"__CONFERENCE_ID__": "\"fosdem\""
 			},
@@ -41,6 +44,9 @@
 				"crons": ["0 * * * *"]
 			}
 		}
+	},
+	"vars": {
+		"ENVIRONMENT": "development"
 	},
 	"define": {
 		"__CONFERENCE_ID__": "null"

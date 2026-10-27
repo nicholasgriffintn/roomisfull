@@ -27,6 +27,9 @@
 		"fosdem": {
 			"name": "fosdem-pwa-push-notifications",
 			"routes": [{ "pattern": "push.fosdempwa.com", "custom_domain": true }],
+			"vars": {
+				"ENVIRONMENT": "production"
+			},
 			"define": {
 				"__CONFERENCE_ID__": "\"fosdem\""
 			},
@@ -65,6 +68,9 @@
 				]
 			}
 		}
+	},
+	"vars": {
+		"ENVIRONMENT": "development"
 	},
 	"define": {
 		"__CONFERENCE_ID__": "null"

@@ -66,6 +66,8 @@ const isAuthorizedRequest = (request: Request, env: Env): boolean => {
 export default Sentry.withSentry<Env, QueueMessage>(
 	(env) => ({
 		dsn: conferenceConfig.integrations.sentryPushDsn,
+		environment: env.ENVIRONMENT,
+		enabled: env.ENVIRONMENT !== "development",
 		sampleRate: 1,
 		enableLogs: false,
 		tracesSampleRate: 0,

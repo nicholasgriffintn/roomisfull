@@ -27,11 +27,11 @@ export const fosdem: ConferenceConfig = {
 	},
 	integrations: {
 		sentryWebDsn:
-			"https://52b654d9455a44b0b822cee104d62dd6@ingest.bitwobbly.com/9",
+			"https://e5bcfe29c23ba60f12be1d2bab89cb52@o4512330606247936.ingest.de.sentry.io/4512330658414672",
 		sentryBuildDsn:
-			"https://07aa95ea691d47e198b5c3b291501895@ingest.bitwobbly.com/7",
+			"https://c964de914285e97bf96dd1bc9f19ef35@o4512330606247936.ingest.de.sentry.io/4512330656514128",
 		sentryPushDsn:
-			"https://2cbf756f8faa4cab906b2dc99df77f82@ingest.bitwobbly.com/8",
+			"https://b3135a5cf116ee928339c7ee34c57b6b@o4512330606247936.ingest.de.sentry.io/4512330654875728",
 		roomStatus: "https://api.fosdem.org/roomstatus/v1/listrooms",
 		navigation: "https://nav.fosdem.org/d/${LOCATION_ID}/",
 		stream: "https://stream.fosdem.org/${ROOM_ID}.m3u8",

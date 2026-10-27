@@ -73,4 +73,5 @@ export interface Env {
 	BOOKMARK_NOTIFICATIONS_ENABLED?: string | boolean;
 	SCHEDULE_CHANGE_NOTIFICATIONS_ENABLED?: string | boolean;
 	CRON_SECRET?: string;
+	ENVIRONMENT?: string;
 }
